@@ -1,0 +1,15 @@
+*.swp
+*.iml
+*.ipr
+*.iws
+*.log
+.idea/
+.gradle/
+/.nb-gradle/
+build/
+target/
+.DS_Store
+classes/
+out/
+.gradletasknamecache
+.java-version

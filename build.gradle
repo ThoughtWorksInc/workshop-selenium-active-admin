@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.apache.commons:commons-lang3:3.+'
+    testCompile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.+'
+    testCompile 'junit:junit:4.+'
+}
+
+sourceSets {
+    test {
+        java {
+            srcDir "testes-aceitacao/src/main/ui"
+        }
+    }
+}
+
+task uiTest(type: Test, dependsOn: clean) {
+
+}
