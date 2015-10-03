@@ -1,6 +1,6 @@
 package demo.activeadmin.info.testes;
 
-import demo.activeadmin.info.support.Driver;
+import demo.activeadmin.info.support.util.Driver;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

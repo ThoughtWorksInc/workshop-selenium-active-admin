@@ -1,0 +1,38 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    function botao() {
+      window.setTimeout(function () { mostraDiv() }, 2000);
+      window.setTimeout(function () { outroCount() }, 5000);
+    }
+
+    function mostraDiv() {
+      document.getElementById('mensagem').style.display = 'block';
+    }
+
+    function outroCount() {
+      document.getElementById('outraMsg').className = 'count';
+      document.getElementById('outraMsg').innerHTML += ' 2';
+    }
+  </script>
+
+  <style>
+      #mensagem {
+        display:none;
+      }
+  </style>
+</head>
+<body>
+
+  <button onclick="botao()" id="btn">botão</button>
+    <br>
+    <br>
+    <br>
+  <div id="mensagem" class='count'>Checar essa mensagem</div>
+
+  <div id="outraMsg">outro count</div>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-package demo.activeadmin.info.support;
+package demo.activeadmin.info.support.util;
 
 import org.junit.After;
 import org.junit.Before;
